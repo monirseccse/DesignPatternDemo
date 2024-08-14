@@ -8,7 +8,7 @@ namespace StatePattern
 {
     internal class TrafficLight
     {
-        private ITrafficLightState _trafficLightState;
+        private ITrafficLightState _trafficLightState; 
         public ITrafficLightState State {
             get
             {
