@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DecoratorPattern
+﻿namespace DecoratorPattern
 {
-    internal class ItalicTextDecorator : TextDecorator
+    internal class ItalicTextDecorator : ITextComponent
     {
         private readonly ITextComponent _textComponent;
-        public ItalicTextDecorator(ITextComponent textComponent) : base(textComponent)
+        public ItalicTextDecorator(ITextComponent textComponent)
         {
             _textComponent = textComponent;
         }
 
-        public override string GetText()
+        public string GetText()
         {
-            return "italic "+ _textComponent.GetText();
+            return "italic " + _textComponent.GetText();
         }
     }
 }

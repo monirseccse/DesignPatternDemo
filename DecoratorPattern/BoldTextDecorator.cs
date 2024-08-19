@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DecoratorPattern
 {
-    internal class BoldTextDecorator : TextDecorator
+    internal class BoldTextDecorator : ITextComponent
     {
         private readonly ITextComponent _textComponent;
-        public BoldTextDecorator(ITextComponent textComponent) : base(textComponent)
+        public BoldTextDecorator(ITextComponent textComponent) 
         {
             _textComponent = textComponent;
         }
-        public override string GetText()
+        public string GetText()
         {
             return "bold " + _textComponent.GetText();
         }

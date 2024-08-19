@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DecoratorPattern
 {
-    internal class Text : ITextComponent
+    internal class PlainText : ITextComponent
     {
         private readonly string _text;
 
-        public Text(string text)
+        public PlainText(string text)
         {
             _text = text;
         }
