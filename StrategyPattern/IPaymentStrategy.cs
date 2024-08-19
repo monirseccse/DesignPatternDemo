@@ -8,6 +8,6 @@ namespace StrategyPattern
 {
     internal interface IPaymentStrategy
     {
-        public void Pay(decimal amount);
+         void Pay(decimal amount);
     }
 }

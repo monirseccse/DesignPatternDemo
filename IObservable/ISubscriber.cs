@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ObservablePattern
 {
-    internal interface IObservable
+    internal interface ISubscriber
     {
-        void Update(int temparature);
+        void Update( string news);
     }
 }

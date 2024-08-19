@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ObservablePattern
 {
-    internal class Observable : IObservable
+    internal class Subscribe : ISubscriber
     {
-        public void Update(int temparature)
+        public void Update(string news)
         {
-            Console.WriteLine($"current temparature is {temparature}"); 
+            Console.WriteLine(news);
         }
     }
 }
