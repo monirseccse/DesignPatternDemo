@@ -17,7 +17,6 @@ namespace DecoratorPattern
 
         public virtual string GetText()
         {
-            Console.WriteLine("decorator");
             return _textComponent.GetText();
         }
     }

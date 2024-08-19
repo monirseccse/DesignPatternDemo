@@ -17,7 +17,6 @@ namespace DecoratorPattern
 
         public string GetText()
         {
-            Console.WriteLine("plain");
             return _text;
         }
     }
