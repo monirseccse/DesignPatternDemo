@@ -1,11 +1,8 @@
 ﻿using IteratorPattern;
 
-var bookCollection = new BookCollection
-{
-    "a",
-    "b",
-    "c"
-};
+var bookCollection = new BookCollection();
+bookCollection.Add("a");
+bookCollection.Add("b");
 
 foreach (var item in bookCollection)
     Console.WriteLine(item);
